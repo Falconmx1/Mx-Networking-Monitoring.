@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mx Networking Monitoring</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🌐 Mx Networking Monitoring</h1>
+        <button class="button" onclick="scanNetwork()">🔍 Escanear Red</button>
+        <div id="loading">⏳ Escaneando la red, espera un momento...</div>
+        <div id="devices" class="device-grid">
+            <p>Presiona el botón para iniciar el monitoreo.</p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
