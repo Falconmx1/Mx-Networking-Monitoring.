@@ -1,0 +1,18 @@
+network:
+  target: "192.168.1.0/24"  # Cambia esto por tu rango de red
+
+alerts:
+  email:
+    enabled: false
+    smtp_server: "smtp.gmail.com"
+    port: 587
+    sender: "tu_correo@gmail.com"
+    password: "tu_contraseña"
+    recipient: "alerta@dominio.com"
+  telegram:
+    enabled: false
+    bot_token: "TU_BOT_TOKEN"
+    chat_id: "TU_CHAT_ID"
+
+monitoring:
+  scan_interval: 60  # Segundos entre escaneos automáticos
